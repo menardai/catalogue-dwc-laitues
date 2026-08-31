@@ -5,6 +5,7 @@ const CATEGORIES = [
   "Contrôle & capteurs",
   "Nutriments",
   "Électricité & sécurité",
+  "Backup — config v1",
 ];
 
 const PRODUCTS = [
@@ -23,8 +24,36 @@ const PRODUCTS = [
     desc: "Enceinte 47×47×79 po en mylar 600D, assez haute pour un DWC instrumenté sous LED dimmable. La tente isole lumière et flux d’air : extraction 4 po vers l’extérieur de la chambre, sans climatiseur dédié. C’est le volume de travail v1 — un bac, pas une forêt."
   },
   {
-    id: "bac",
+    id: "spty100",
     cat: "Enceinte & réservoir",
+    name: "Bac de rétention",
+    model: "Emax Plastics SPTY100",
+    sku: "SPTY100",
+    qty: "1",
+    price: "323,56 $ CAD",
+    currency: "CAD",
+    supplier: "Emax Plastics",
+    img: "images/emax-spty100.jpg",
+    url: "https://emaxplastics.ca/shop-here/spill-containment-trays/spill-containment-trays-m-46-x-38-x-12/",
+    desc: "Plateau PE rotomoulé canadien 46×38×12 po / 100 gal; secondaire pour condo; porte deux bus tubs FG335100; bande sèche ~10 po possible sur le petit côté dans la tente 4×4; freight; blanc food‑grade sur demande. Un SEN0454 dedans."
+  },
+  {
+    id: "fg335100",
+    cat: "Enceinte & réservoir",
+    name: "Réservoirs DWC",
+    model: "Rubbermaid Commercial FG335100",
+    sku: "FG335100GRAY",
+    qty: "2",
+    price: "~24 $ CAD / unité",
+    currency: "CAD",
+    supplier: "s.t.o.p. Restaurant Supply",
+    img: "images/rubbermaid-fg335100.jpg",
+    url: "https://www.shopatstop.com/products/21-1-2x17-1-8x7-inch-gray-bus-bin",
+    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Gris préféré; brun résiste mieux aux algues si dispo. Alternative : caisse de 6 chez Hubert ~215 $ CAD."
+  },
+  {
+    id: "bac",
+    cat: "Backup — config v1",
     name: "Bac de rétention",
     model: "XTrays Classic Flood Black 2×4",
     sku: "141104",
@@ -34,11 +63,12 @@ const PRODUCTS = [
     supplier: "HydroponiquePro",
     img: "images/xtrays-classic-flood.jpg",
     url: "https://hydroponiquepro.com/fr/products/xtrays-classic-flood-black",
-    desc: "Plateau ABS noir 2×4, fabriqué au Canada. Il porte le réservoir DWC et retient une fuite avant qu’elle n’atteigne le plancher. Les détecteurs SEN0454 se posent dedans : première ligne de défense, pas un accessoire cosmétique."
+    backup: true,
+    desc: "Ancienne option v1 : plateau ABS noir 2×4 fabriqué au Canada. Il portait un seul EZ Stor ~30 L et retenait une fuite. Conservé ici en référence comme config de secours (un bac + couvercle percé)."
   },
   {
     id: "reservoir",
-    cat: "Enceinte & réservoir",
+    cat: "Backup — config v1",
     name: "Réservoir DWC",
     model: "EZ Stor 8 gal",
     sku: "IFS-0065",
@@ -48,11 +78,12 @@ const PRODUCTS = [
     supplier: "Indoor Farmer",
     img: "images/ez-stor-8gal.jpg",
     url: "https://indoorfarmer.ca/products/ez-stor-trade-container-buckets-lids",
-    desc: "Bac HDPE rectangulaire d’environ 30 L, sans trous d’usine. Forme stable, poignées moulées, volume raisonnable pour 4 à 6 laitues en racine nue. On le perce soi-même : capteurs, tuyaux d’air, rien de plus."
+    backup: true,
+    desc: "Ancien réservoir v1 ~30 L, HDPE, à percer avec couvercle. Gardé en documentation pour la config single‑bac EZ Stor + XTrays 2×4."
   },
   {
     id: "couvercle",
-    cat: "Enceinte & réservoir",
+    cat: "Backup — config v1",
     name: "Couvercle DWC",
     model: "EZ Stor Hinged Lid",
     sku: "IFS-0067",
@@ -62,7 +93,8 @@ const PRODUCTS = [
     supplier: "Indoor Farmer",
     img: "images/ez-stor-lid.jpg",
     url: "https://indoorfarmer.ca/products/ez-stor-trade-container-buckets-lids",
-    desc: "Couvercle à charnière compatible 8 et 13 gal, à percer pour 4 à 6 net pots de 2 po. La charnière permet d’ouvrir sans démonter les plants pour inspecter racines, pH et pierre à air. Même page produit que le bac : variante « Hinged Lid »."
+    backup: true,
+    desc: "Couvercle à charnière pour EZ Stor 8/13 gal, percé pour 4–6 sites. Conservé comme documentation de la précédente config v1 (un seul bac)."
   },
   {
     id: "led",
@@ -119,7 +151,7 @@ const PRODUCTS = [
     supplier: "Indoor Farmer",
     img: "images/active-aqua-aapa15l.jpg",
     url: "https://indoorfarmer.ca/products/active-aqua-air-pump-4-outlets-6w-15-l-min",
-    desc: "4 sorties, 15 L/min, 6 W. Assez d’air pour oxygéner ~30 L avec deux pierres, sans surdimensionner le bruit. Se place hors du bac, au-dessus du niveau d’eau, derrière clapets anti-retour. Tourne en continu : le DWC ne pardonne pas une panne d’oxygène."
+    desc: "4 sorties, 15 L/min, 6 W. Alimente les deux bacs FG335100 via un T et deux lignes — assez d’air pour oxygéner ~2×29 L avec deux pierres par bac, sans surdimensionner le bruit. Se place hors bac, au‑dessus du niveau d’eau, derrière clapets anti‑retour. Tourne en continu."
   },
   {
     id: "pierres",
@@ -169,13 +201,13 @@ const PRODUCTS = [
     name: "Net pots 2 po",
     model: "HydroFarm Net Cup 2 Inch",
     sku: "2″ mesh",
-    qty: "4–6",
+    qty: "10–12",
     price: "5–10 $ CAD",
     currency: "CAD",
     supplier: "Indoor Farmer",
     img: "images/hydrofarm-net-pots-2.jpg",
     url: "https://indoorfarmer.ca/products/future-harvest-net-pots",
-    desc: "Paniers 2 po, format laitue : assez d’appui dans le couvercle EZ Stor, racines libres vers la solution. Quatre à six sites, pas plus — le bac de 30 L n’est pas un radeau NFT. À 0,35 $ l’unité, on en prend six et on a des rechanges."
+    desc: "Paniers 2 po, format laitue, pour deux radeaux XPS DIY. Cinq à six sites par bac FG335100 (~10–12 au total), racines libres vers la solution. À 0,35 $ l’unité, on en prend une douzaine pour avoir des rechanges."
   },
   {
     id: "mac",
@@ -330,7 +362,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/dfrobot-sen0454.jpg",
     url: "https://www.dfrobot.com/product-2316.html",
-    desc: "Contacts NO/NC, IP66. Un dans le bac XTrays, un au point bas de la tente. Ils ferment une entrée Arduino et, si besoin, crient au Mac. Deux, pas un : une fuite de couvercle et une fuite de gaine n’arrivent pas au même endroit."
+    desc: "Contacts NO/NC, IP66. Un dans le SPTY100, un au point bas de la tente. Ils ferment une entrée Arduino et, si besoin, crient au Mac. Deux, pas un : une fuite de couvercle et une fuite de gaine n’arrivent pas au même endroit."
   },
   {
     id: "remo-a",
@@ -419,6 +451,7 @@ function badgeHTML(p) {
   else bits.push('<span class="badge cad">CAD</span>');
   if (p.owned) bits.push('<span class="badge own">Déjà disponible</span>');
   if (p.restock) bits.push('<span class="badge restock">En réapprovisionnement</span>');
+  if (p.backup) bits.push('<span class="badge backup">Backup v1</span>');
   return bits.join("");
 }
 
