@@ -64,7 +64,7 @@ const PRODUCTS = [
     img: "images/xtrays-classic-flood.jpg",
     url: "https://hydroponiquepro.com/fr/products/xtrays-classic-flood-black",
     backup: true,
-    desc: "Ancienne option v1 : plateau ABS noir 2×4 fabriqué au Canada. Il portait un seul EZ Stor ~30 L et retenait une fuite. Conservé ici en référence comme config de secours (un bac + couvercle percé)."
+    desc: "Ancienne option v1 : plateau ABS noir 2×4 fabriqué au Canada. Il portait un seul EZ Stor ~30 L et retenait une fuite. Conservé ici en référence comme config de secours (EZ Stor 8 gal + XTrays 2×4)."
   },
   {
     id: "reservoir",
@@ -79,22 +79,7 @@ const PRODUCTS = [
     img: "images/ez-stor-8gal.jpg",
     url: "https://indoorfarmer.ca/products/ez-stor-trade-container-buckets-lids",
     backup: true,
-    desc: "Ancien réservoir v1 ~30 L, HDPE, à percer avec couvercle. Gardé en documentation pour la config single‑bac EZ Stor + XTrays 2×4."
-  },
-  {
-    id: "couvercle",
-    cat: "Backup — config v1",
-    name: "Couvercle DWC",
-    model: "EZ Stor Hinged Lid",
-    sku: "IFS-0067",
-    qty: "1",
-    price: "9,95 $ CAD",
-    currency: "CAD",
-    supplier: "Indoor Farmer",
-    img: "images/ez-stor-lid.jpg",
-    url: "https://indoorfarmer.ca/products/ez-stor-trade-container-buckets-lids",
-    backup: true,
-    desc: "Couvercle à charnière pour EZ Stor 8/13 gal, percé pour 4–6 sites. Conservé comme documentation de la précédente config v1 (un seul bac)."
+    desc: "Ancien réservoir v1 ~30 L, HDPE, à percer pour capteurs et air. Gardé en documentation pour la config single‑bac EZ Stor + XTrays 2×4."
   },
   {
     id: "led",
@@ -362,7 +347,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/dfrobot-sen0454.jpg",
     url: "https://www.dfrobot.com/product-2316.html",
-    desc: "Contacts NO/NC, IP66. Un dans le SPTY100, un au point bas de la tente. Ils ferment une entrée Arduino et, si besoin, crient au Mac. Deux, pas un : une fuite de couvercle et une fuite de gaine n’arrivent pas au même endroit."
+    desc: "Contacts NO/NC, IP66. Un dans le SPTY100, un au point bas de la tente. Ils ferment une entrée Arduino et, si besoin, crient au Mac. Deux, pas un : un débordement bac/radeau et une fuite de gaine n’arrivent pas au même endroit."
   },
   {
     id: "remo-a",
