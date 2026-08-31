@@ -13,15 +13,15 @@ const PRODUCTS = [
     id: "tente",
     cat: "Enceinte & réservoir",
     name: "Tente de culture",
-    model: "Fusion Hut 4×4×6.5",
-    sku: "120x120x200-600D",
+    model: "AC Infinity CLOUDLAB 844 (4×4×80 po)",
+    sku: "AC-CBA844 / B08MP1ZPMX",
     qty: "1",
-    price: "129,99 $ CAD",
+    price: "299,00 $ CAD",
     currency: "CAD",
-    supplier: "GrowLights Canada",
-    img: "images/fusion-hut-4x4.jpg",
-    url: "https://growlights.ca/products/4-x-4-x-6-5-fusion-hut-600d-mylar-grow-tent",
-    desc: "Enceinte 47×47×79 po en mylar 600D, assez haute pour un DWC instrumenté sous LED dimmable. La tente isole lumière et flux d’air : extraction 4 po vers l’extérieur de la chambre, sans climatiseur dédié. C’est le volume de travail v1 — un bac, pas une forêt."
+    supplier: "Amazon.ca",
+    img: "images/acinfinity-cloudlab-844.jpg",
+    url: "https://www.amazon.ca/AC-Infinity-CLOUDLAB-Controller-Hydroponics/dp/B08MP1ZPMX?th=1",
+    desc: "Enceinte 48×48×80 po, toile 2000D, pôles 1 po, plaque de montage contrôleur. Modèle CLOUDLAB 844 (AC‑CBA844). On ne prend pas le kit UIS/69 Pro : il reste retiré en bas de page. Volume suffisant pour deux bacs DWC brun FG335192BRN sous LED dimmable."
   },
   {
     id: "spty100",
@@ -35,21 +35,21 @@ const PRODUCTS = [
     supplier: "Emax Plastics",
     img: "images/emax-spty100.jpg",
     url: "https://emaxplastics.ca/shop-here/spill-containment-trays/spill-containment-trays-m-46-x-38-x-12/",
-    desc: "Plateau PE rotomoulé canadien 46×38×12 po / 100 gal; secondaire pour condo; porte deux bus tubs FG335100; bande sèche ~10 po possible sur le petit côté dans la tente 4×4; freight; blanc food‑grade sur demande. Un SEN0454 dedans."
+    desc: "Plateau PE rotomoulé canadien 46×38×12 po / 100 gal; secondaire pour condo; porte deux bus tubs FG335192BRN; bande sèche ~10 po possible sur le petit côté dans la tente 4×4; freight; blanc food‑grade sur demande. Un SEN0454 dedans."
   },
   {
-    id: "fg335100",
+    id: "fg335192brn",
     cat: "Enceinte & réservoir",
     name: "Réservoirs DWC",
-    model: "Rubbermaid Commercial FG335100",
-    sku: "FG335100GRAY",
+    model: "Rubbermaid Commercial FG335192BRN (brun)",
+    sku: "CF691 (Linen Plus) · Mfr FG335192BRN",
     qty: "2",
-    price: "~24 $ CAD / unité",
+    price: "38,50 $ CAD / unité",
     currency: "CAD",
-    supplier: "s.t.o.p. Restaurant Supply",
-    img: "images/rubbermaid-fg335100.jpg",
-    url: "https://www.shopatstop.com/products/21-1-2x17-1-8x7-inch-gray-bus-bin",
-    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Gris préféré; brun résiste mieux aux algues si dispo. Alternative : caisse de 6 chez Hubert ~215 $ CAD."
+    supplier: "Linen Plus",
+    img: "images/rubbermaid-fg335192brn.jpg",
+    url: "https://www.linenplus.ca/en/rubbermaid-undivided-bus-utility-box.html?variation=629054",
+    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Variante brun FG335192BRN, SKU fournisseur CF691. Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Linen Plus indique souvent un minimum de 4 unités."
   },
   {
     id: "bac",
@@ -136,7 +136,7 @@ const PRODUCTS = [
     supplier: "Indoor Farmer",
     img: "images/active-aqua-aapa15l.jpg",
     url: "https://indoorfarmer.ca/products/active-aqua-air-pump-4-outlets-6w-15-l-min",
-    desc: "4 sorties, 15 L/min, 6 W. Alimente les deux bacs FG335100 via un T et deux lignes — assez d’air pour oxygéner ~2×29 L avec deux pierres par bac, sans surdimensionner le bruit. Se place hors bac, au‑dessus du niveau d’eau, derrière clapets anti‑retour. Tourne en continu."
+    desc: "4 sorties, 15 L/min, 6 W. Alimente les deux bacs FG335192BRN via un T et deux lignes — assez d’air pour oxygéner ~2×29 L avec deux pierres par bac, sans surdimensionner le bruit. Se place hors bac, au‑dessus du niveau d’eau, derrière clapets anti‑retour. Tourne en continu."
   },
   {
     id: "pierres",
@@ -192,7 +192,7 @@ const PRODUCTS = [
     supplier: "Indoor Farmer",
     img: "images/hydrofarm-net-pots-2.jpg",
     url: "https://indoorfarmer.ca/products/future-harvest-net-pots",
-    desc: "Paniers 2 po, format laitue, pour deux radeaux XPS DIY. Cinq à six sites par bac FG335100 (~10–12 au total), racines libres vers la solution. À 0,35 $ l’unité, on en prend une douzaine pour avoir des rechanges."
+    desc: "Paniers 2 po, format laitue, pour deux radeaux XPS DIY. Cinq à six sites par bac FG335192BRN (~10–12 au total), racines libres vers la solution. À 0,35 $ l’unité, on en prend une douzaine pour avoir des rechanges."
   },
   {
     id: "mac",
