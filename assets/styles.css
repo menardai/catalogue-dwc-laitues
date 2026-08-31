@@ -360,6 +360,7 @@ button, input { font-family: inherit; }
 .badge.own { color: var(--own); }
 .badge.restock { color: var(--restock); }
 .badge.tbd { color: var(--warn); }
+.badge.backup { color: #c9b38a; border-color: rgba(201, 179, 138, 0.45); }
 .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .card-cat {
   font-family: var(--font-mono);
