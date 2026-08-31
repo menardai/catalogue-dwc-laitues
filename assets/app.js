@@ -52,6 +52,21 @@ const PRODUCTS = [
     desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Variante brun FG335192BRN, SKU fournisseur CF691. Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Linen Plus indique souvent un minimum de 4 unités."
   },
   {
+    id: "backup-tente",
+    cat: "Backup — config v1",
+    name: "Tente de culture (backup)",
+    model: "Fusion Hut 4×4×6.5",
+    sku: "120x120x200-600D",
+    qty: "1",
+    price: "129,99 $ CAD",
+    currency: "CAD",
+    supplier: "GrowLights Canada",
+    img: "images/fusion-hut-4x4.jpg",
+    url: "https://growlights.ca/products/4-x-4-x-6-5-fusion-hut-600d-mylar-grow-tent",
+    backup: true,
+    desc: "Ancienne tente v1 : 47×47×79 po, mylar 600D. Restée en documentation comme solution de secours avec l’EZ Stor 8 gal et le plateau XTrays 2×4."
+  },
+  {
     id: "bac",
     cat: "Backup — config v1",
     name: "Bac de rétention",
