@@ -239,6 +239,20 @@ const PRODUCTS = [
     desc: "Renesas RA4M1 32 bits, 5 V, USB-C, format UNO. Il lit SCD41, SHT45, DS18B20 et les fuites, et pilote le GP8413. Le Mac supervise ; l’Arduino reste le bas niveau capteurs/actionneurs, même si le portable dort."
   },
   {
+    id: "feather-esp32-v2",
+    cat: "Contrôle & capteurs",
+    name: "ESP32 Feather V2",
+    model: "Adafruit ESP32 Feather V2 with Headers (STEMMA QT)",
+    sku: "5900 / PiShop 805-1",
+    qty: "1",
+    price: "32,95 $ CAD",
+    currency: "CAD",
+    supplier: "PiShop.ca",
+    img: "images/esp32-feather-v2-headers-pishop.jpg",
+    url: "https://www.pishop.ca/product/adafruit-esp32-feather-v2-with-headers-8mb-flash-2-mb-psram-stemma-qt/",
+    desc: "Version avec headers pré‑soudés, USB‑C et port STEMMA QT. L’Adafruit 5400 est la version sans headers — on prend le 5900."
+  },
+  {
     id: "dac",
     cat: "Contrôle & capteurs",
     name: "DAC 0–10 V",
@@ -281,6 +295,20 @@ const PRODUCTS = [
     desc: "Sonde T/HR plus fine que le canal climatique du SCD41. Elle ancre le modèle thermique (chambre vs tente) et détecte une dérive du SCD41. Deux mesures qui divergent : on croit la SHT45, on diagnostique l’autre."
   },
   {
+    id: "usb-a-to-c",
+    cat: "Contrôle & capteurs",
+    name: "Câble USB‑A → USB‑C (données)",
+    model: "USB Type‑C to USB 3.0 A‑Male Cable — 5 ft",
+    sku: "CS-PID-48",
+    qty: "1",
+    price: "5,95 $ CAD",
+    currency: "CAD",
+    supplier: "PiShop.ca",
+    img: "images/usb-a-to-c-5ft-pishop.jpg",
+    url: "https://www.pishop.ca/product/usb-type-c-to-usb-3-0-a-male-cable-5ft/",
+    desc: "5 pi ≈ 1,52 m (plus proche de 1,8 m en stock CA). Câble de données USB 3.0, pas un câble charge‑only."
+  },
+  {
     id: "ds18",
     cat: "Contrôle & capteurs",
     name: "Température de solution",
@@ -292,7 +320,7 @@ const PRODUCTS = [
     supplier: "PiShop Canada",
     img: "images/ds18b20-pishop.jpg",
     url: "https://www.pishop.ca/product/waterproof-ds18b20-digital-temperature-sensor-extras/",
-    desc: "Sonde étanche 1-Wire, à immerger dans le DWC. La température de solution pilote oxygène dissous et confort racinaire — plus critique que l’air pour la laitue. Le kit PiShop inclut le résistor de rappel : prêt à câbler sur l’UNO."
+    desc: "Sonde étanche 1-Wire, à immerger dans le DWC. La température de solution pilote oxygène dissous et confort racinaire — plus critique que l’air pour la laitue. Câble ~91 cm + résistance 4,7 kΩ inclus ; prêt à câbler sur l’UNO."
   },
   {
     id: "ph",
@@ -334,7 +362,35 @@ const PRODUCTS = [
     supplier: "Atlas Scientific",
     img: "images/atlas-ezo-carrier-isccb-2.jpg",
     url: "https://atlas-scientific.com/carrier-boards/electrically-isolated-ezo-carrier-board-gen-2/",
-    desc: "Chaque circuit EZO va sur son propre Electrically Isolated EZO Carrier Board — il en faut donc 2 pour pH + EC. Isolation électrique intégrée pour UART/I²C, connecteur SMA pour la sonde; plus besoin de breadboard ni d’isolateur externe. Carte support uniquement : les circuits EZO ne sont pas inclus."
+    desc: "Chaque circuit EZO va sur son propre Electrically Isolated EZO Carrier Board — il en faut donc 2 pour pH + EC. Isolation électrique intégrée pour UART/I²C, connecteur SMA pour la sonde; plus besoin de breadboard ni d’isolateur externe. Câble 5‑pin inclus (avec entretoises + header). Carte support uniquement : les circuits EZO ne sont pas inclus."
+  },
+  {
+    id: "stemma-qt-400mm",
+    cat: "Contrôle & capteurs",
+    name: "Câble STEMMA QT / Qwiic",
+    model: "Adafruit 5385 — 400 mm",
+    sku: "DigiKey 1528-5385-ND / 5385",
+    qty: "2",
+    price: "2,20 $ CAD / pce",
+    currency: "CAD",
+    supplier: "DigiKey Canada",
+    img: "images/stemma-qt-400mm-adafruit.jpg",
+    url: "https://www.digikey.ca/en/products/detail/adafruit-industries-llc/5385/16546436",
+    desc: "Longueur 400 mm — PiShop ne monte qu’à 200 mm."
+  },
+  {
+    id: "dupont-ff-40",
+    cat: "Contrôle & capteurs",
+    name: "Dupont F‑F — ruban 40×",
+    model: "Jumper femelle‑femelle 20 cm",
+    sku: "285",
+    qty: "1",
+    price: "2,95 $ CAD",
+    currency: "CAD",
+    supplier: "PiShop.ca",
+    img: "images/dupont-ff-40x-pishop.jpg",
+    url: "https://www.pishop.ca/product/40-x-jumper-cable-for-arduino-20cm/",
+    desc: "40 conducteurs femelle‑femelle, 20 cm. Pour prototyper câblage UNO/ESP32."
   },
   {
     id: "danby",
@@ -363,6 +419,63 @@ const PRODUCTS = [
     img: "images/shelly-plug-us-gen4.jpg",
     url: "https://us.shelly.com/products/shelly-plug-us-gen4-black?variant=51150414020949",
     desc: "Prise 1800 W, Gen4, pour couper un appareil de chambre (Danby, pompe à air de secours) sans cloud obligatoire — API locale. Ce n’est pas le dimming 0–10 V : c’est le tout-ou-rien sécurisé. Un seul SKU noir, format US."
+  },
+  {
+    id: "usb-c-psu",
+    cat: "Électricité & sécurité",
+    name: "Alimentation USB‑C 5.1 V / 3 A",
+    model: "USB‑C Power Supply 5.1V 3.0A UL Listed (noir)",
+    sku: "1203",
+    qty: "1",
+    price: "9,95 $ CAD",
+    currency: "CAD",
+    supplier: "PiShop.ca",
+    img: "images/usb-c-5v3a-psu-pishop.jpg",
+    url: "https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/",
+    desc: "Bloc secteur USB‑C pour ESP32/UNO, cordon ~1,5 m. Catégorie sécurité/électricité."
+  },
+  {
+    id: "boitier-1591xxtsbk",
+    cat: "Électricité & sécurité",
+    name: "Boîtier ABS IP54",
+    model: "Hammond 1591XXTSBK",
+    sku: "HM3995-ND",
+    qty: "1",
+    price: "15,42 $ CAD",
+    currency: "CAD",
+    supplier: "DigiKey Canada",
+    img: "images/hammond-1591xxtsbk.jpg",
+    url: "https://www.digikey.ca/en/products/detail/hammond-manufacturing/1591XXTSBK/1206951",
+    desc: "~123×83×60 mm, ABS noir, IP54. Pas ventilée d’usine — percer si besoin pour ESP32 + carriers."
+  },
+  {
+    id: "cable-22awg-3c",
+    cat: "Électricité & sécurité",
+    name: "Câble 22 AWG 3 conducteurs",
+    model: "Alpha 1173C (référence type)",
+    sku: "A121-100-ND (bobine 100 pi)",
+    qty: "~2 m",
+    price: "~8 $ CAD",
+    currency: "CAD",
+    supplier: "DigiKey Canada",
+    img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='480'%3E%3Crect width='100%25' height='100%25' fill='%23070908'/%3E%3Ctext x='50%25' y='50%25' fill='%23b7c2b4' font-family='sans-serif' font-size='24' text-anchor='middle'%3E22%20AWG%203C%20~2%20m%3C/text%3E%3C/svg%3E",
+    url: "https://www.digikey.ca/en/products/detail/alpha-wire/1173C-SL005/204535",
+    tbd: true,
+    desc: "Besoin ~2 m. DigiKey ne vend que la bobine 100 pi — sourcer une coupe courte ou un câble d’alarme 22/3 localement."
+  },
+  {
+    id: "bundle-fixations",
+    cat: "Électricité & sécurité",
+    name: "Velcro + serre‑câbles + passe‑câbles (kit)",
+    model: "Attaches / colliers / presse‑étoupes — lot pratique",
+    sku: null,
+    qty: "1 kit",
+    price: "~15 $ CAD",
+    currency: "CAD",
+    supplier: "Amazon.ca",
+    img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='480'%3E%3Crect width='100%25' height='100%25' fill='%23070908'/%3E%3Ctext x='50%25' y='46%25' fill='%23b7c2b4' font-family='sans-serif' font-size='22' text-anchor='middle'%3EKit%20Velcro%20%2B%20serre-c%C3%A2bles%20%2B%20passe-c%C3%A2bles%3C/text%3E%3Ctext x='50%25' y='66%25' fill='%2394a592' font-family='sans-serif' font-size='16' text-anchor='middle'%3Eenv.~15%20$%20CAD%3C/text%3E%3C/svg%3E",
+    url: "https://www.amazon.ca/dp/B000F5K82A",
+    desc: "Carte combinée pratique : Velcro ONE‑WRAP (Amazon B000F5K82A, ~6,49 $), serre‑câbles Panduit PLT1M‑C0 (DigiKey 298‑1040‑ND, ~0,48 $ / pce × ~25) et presse‑étoupes Bud PG7 (DigiKey 377‑2183‑ND, ~0,73 $ / pce × 4–6). Liens additionnels : 298‑1040‑ND et 377‑2183‑ND chez DigiKey."
   },
   {
     id: "fuite",
