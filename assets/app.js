@@ -222,21 +222,7 @@ const PRODUCTS = [
     img: "images/macbook-air-2012.jpg",
     url: null,
     owned: true,
-    desc: "Machine existante : Python, base de données, tableau de bord, boucles PID/MPC. Les sondes Atlas pH et EC arrivent en USB ; l’Arduino aussi. Toute la boucle reste locale — aucun nuage, aucun abonnement capteur. Photo Wikimedia (Mid 2012)."
-  },
-  {
-    id: "arduino",
-    cat: "Contrôle & capteurs",
-    name: "Contrôleur I/O",
-    model: "Arduino UNO R4 Minima",
-    sku: "ABX00080",
-    qty: "1",
-    price: "28,80 $ CAD",
-    currency: "CAD",
-    supplier: "Mouser Canada",
-    img: "images/arduino-uno-r4-minima.jpg",
-    url: "https://www.mouser.ca/ProductDetail/Arduino/ABX00080?qs=ulEaXIWI0c9tbG%2FHj5EzRA%3D%3D",
-    desc: "Renesas RA4M1 32 bits, 5 V, USB-C, format UNO. Il lit SCD41, SHT45, DS18B20 et les fuites, et pilote le GP8413. Le Mac supervise ; l’Arduino reste le bas niveau capteurs/actionneurs, même si le portable dort."
+    desc: "Machine existante : Python, base de données, tableau de bord, boucles PID/MPC. Les sondes Atlas pH et EC arrivent en USB. L’ESP32 Feather V2 gère l’I/O (USB série possible) ; le Mac supervise. Boucle 100 % locale — aucun nuage, aucun abonnement capteur. Photo Wikimedia (Mid 2012)."
   },
   {
     id: "feather-esp32-v2",
@@ -250,7 +236,7 @@ const PRODUCTS = [
     supplier: "PiShop.ca",
     img: "images/esp32-feather-v2-headers-pishop.jpg",
     url: "https://www.pishop.ca/product/adafruit-esp32-feather-v2-with-headers-8mb-flash-2-mb-psram-stemma-qt/",
-    desc: "Version avec headers pré‑soudés, USB‑C et port STEMMA QT. L’Adafruit 5400 est la version sans headers — on prend le 5900."
+    desc: "Contrôleur I/O unique du projet. Il lit SCD41, SHT45, DS18B20 et les fuites, et pilote le GP8413 pour le dimming LED et ventilateur EC (0–10 V). Version avec headers et STEMMA QT, USB‑C. Le MacBook Air 2012 supervise (logging, tableaux de bord, PID/MPC) mais l’ESP32 reste le bas niveau même si le portable dort."
   },
   {
     id: "dac",
@@ -320,7 +306,21 @@ const PRODUCTS = [
     supplier: "PiShop Canada",
     img: "images/ds18b20-pishop.jpg",
     url: "https://www.pishop.ca/product/waterproof-ds18b20-digital-temperature-sensor-extras/",
-    desc: "Sonde étanche 1-Wire, à immerger dans le DWC. La température de solution pilote oxygène dissous et confort racinaire — plus critique que l’air pour la laitue. Câble ~91 cm + résistance 4,7 kΩ inclus ; prêt à câbler sur l’UNO."
+    desc: "Sonde étanche 1-Wire, à immerger dans le DWC. La température de solution pilote oxygène dissous et confort racinaire — plus critique que l’air pour la laitue. Câble ~91 cm + résistance 4,7 kΩ inclus ; prêt à câbler sur l’ESP32 / Feather."
+  },
+  {
+    id: "ph",
+    cat: "Contrôle & capteurs",
+    name: "pH continu",
+    model: "Atlas Scientific EZO Complete-pH Kit",
+    sku: "KIT-106P",
+    qty: "1",
+    price: "194,99 $ USD",
+    currency: "USD",
+    supplier: "Atlas Scientific",
+    img: "images/atlas-ezo-ph.jpg",
+    url: "https://atlas-scientific.com/kits/ezo-complete-ph-kit/",
+    desc: "Kit USB complet : circuit EZO, sonde, calibration. Branché au Mac, pas à un nuage. Le pH de la solution laitue reste la consigne manuelle v1 — pas de pompe doseuse. On mesure en continu pour voir la dérive, pas pour fermer une boucle d’acide encore."
   },
   {
     id: "ph",
@@ -390,7 +390,7 @@ const PRODUCTS = [
     supplier: "PiShop.ca",
     img: "images/dupont-ff-40x-pishop.jpg",
     url: "https://www.pishop.ca/product/40-x-jumper-cable-for-arduino-20cm/",
-    desc: "40 conducteurs femelle‑femelle, 20 cm. Pour prototyper câblage UNO/ESP32."
+    desc: "40 conducteurs femelle‑femelle, 20 cm. Pour prototyper câblage ESP32."
   },
   {
     id: "danby",
@@ -432,7 +432,7 @@ const PRODUCTS = [
     supplier: "PiShop.ca",
     img: "images/usb-c-5v3a-psu-pishop.jpg",
     url: "https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/",
-    desc: "Bloc secteur USB‑C pour ESP32/UNO, cordon ~1,5 m. Catégorie sécurité/électricité."
+    desc: "Bloc secteur USB‑C pour ESP32, cordon ~1,5 m. Catégorie sécurité/électricité."
   },
   {
     id: "boitier-1591xxtsbk",
@@ -489,7 +489,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/dfrobot-sen0454.jpg",
     url: "https://www.dfrobot.com/product-2316.html",
-    desc: "Contacts NO/NC, IP66. Un dans le SPTY100, un au point bas de la tente. Ils ferment une entrée Arduino et, si besoin, crient au Mac. Deux, pas un : un débordement bac/radeau et une fuite de gaine n’arrivent pas au même endroit."
+    desc: "Contacts NO/NC, IP66. Un dans le SPTY100, un au point bas de la tente. Ils ferment une entrée ESP32 / Feather et, si besoin, crient au Mac. Deux, pas un : un débordement bac/radeau et une fuite de gaine n’arrivent pas au même endroit."
   },
   {
     id: "remo-a",

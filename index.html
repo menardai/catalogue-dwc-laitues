@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DWC laitues — double DWC · catalogue</title>
-  <meta name="description" content="Catalogue d’équipement pour deux bacs DWC FG335192BRN (brun) dans un SPTY100, radeaux XPS DIY, tente 4×4. Contrôle local MacBook Air 2012 + Arduino UNO R4 Minima. Sans AC, sans appoint d’eau auto, sans CO₂ injecté.">
+  <meta name="description" content="Catalogue d’équipement pour deux bacs DWC FG335192BRN (brun) dans un SPTY100, radeaux XPS DIY, tente 4×4. Contrôle local MacBook Air 2012 + ESP32 Feather V2. Sans AC, sans appoint d’eau auto, sans CO₂ injecté.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
       dans un <strong>SPTY100</strong> Emax Plastics, radeaux XPS faits maison.
       Sans climatiseur, sans appoint d’eau automatique, sans CO₂ injecté.
       Superviseur : <strong>MacBook Air 2012</strong> déjà sur le bureau.
-      L’<strong>Arduino UNO R4 Minima</strong> tient capteurs et actionneurs ;
+      L’<strong>ESP32 Feather V2</strong> tient capteurs et actionneurs ;
       Atlas pH et EC passent en <strong>USB vers le Mac</strong>. Boucle 100 % locale.
     </p>
     <p class="heat-note">
@@ -55,8 +55,8 @@
     <div class="budget-inner">
       <div class="budget-cell">
         <div class="label">Achetés au Canada</div>
-        <div class="value">~1 670–1 820 $ CAD</div>
-        <div class="hint">Tente, LED, bac, nutriments, Danby, capteurs, ESP32/câblage/boîte · DigiKey / PiShop / Mouser</div>
+        <div class="value">~1 640–1 790 $ CAD</div>
+        <div class="hint">Tente, LED, bac, nutriments, Danby, capteurs, ESP32/câblage/boîte · DigiKey / PiShop</div>
       </div>
       <div class="budget-cell">
         <div class="label">Importés</div>
@@ -65,7 +65,7 @@
       </div>
       <div class="budget-cell accent">
         <div class="label">Total estimé</div>
-        <div class="value">2 710–2 910 $ CAD</div>
+        <div class="value">2 680–2 880 $ CAD</div>
         <div class="hint">Avant taxes et livraison · 1 septembre 2026 · MacBook = 0 $</div>
       </div>
     </div>
@@ -74,12 +74,12 @@
   <section class="arch" aria-label="Architecture">
     <div class="section-head">
       <h2>Architecture</h2>
-      <p>Le Mac parle USB. L’Arduino parle I²C, 1-Wire et contacts secs. Un ESP32 Feather V2 peut servir de nœud Wi‑Fi en bordure (tests) sans remplacer l’Arduino. Le DAC 0–10 V tient LED et ventilateur EC.</p>
+      <p>Le Mac parle USB pour Atlas pH/EC. L’ESP32 Feather V2 parle I²C, 1‑Wire et contacts secs, et pilote le DAC 0–10 V GP8413. Wi‑Fi optionnel, toujours sans nuage.</p>
     </div>
     <div class="arch-card">
       <svg viewBox="0 0 1100 340" role="img" aria-labelledby="archTitle archDesc">
         <title id="archTitle">Schéma de contrôle local DWC</title>
-        <desc id="archDesc">MacBook Air 2012 relié en USB à Atlas pH, Atlas EC et Arduino UNO R4 Minima. Chaque circuit EZO peut aussi passer par un carrier isolé dédié (UART/I²C). L’Arduino relie SCD41, SHT45, DS18B20, détecteurs de fuite et DAC GP8413 vers LED et ventilateur EC.</desc>
+        <desc id="archDesc">MacBook Air 2012 relié en USB à Atlas pH et Atlas EC, et à l’ESP32 Feather V2 si besoin (USB série). L’ESP32 relie SCD41, SHT45, DS18B20, détecteurs de fuite et DAC GP8413 vers LED et ventilateur EC.</desc>
         <defs>
           <linearGradient id="gNode" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#1a241c"/>
@@ -128,8 +128,8 @@
         </g>
         <g>
           <rect x="390" y="208" width="170" height="80" rx="14" fill="url(#gNode)" stroke="#3ecf6a" stroke-opacity="0.7" filter="url(#glow)"/>
-          <text class="node-title" x="475" y="242" text-anchor="middle">Arduino UNO R4</text>
-          <text class="node-sub" x="475" y="260" text-anchor="middle">Minima ABX00080</text>
+          <text class="node-title" x="475" y="242" text-anchor="middle">ESP32 Feather V2</text>
+          <text class="node-sub" x="475" y="260" text-anchor="middle">Adafruit 5900 · USB‑C · QT</text>
         </g>
 
         <g>
