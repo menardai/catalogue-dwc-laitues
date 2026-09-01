@@ -323,6 +323,20 @@ const PRODUCTS = [
     desc: "Conductivité K=1.0, USB vers le Mac, même philosophie que le pH. Suit la force nutritive Remo A+B dans ~30 L. Sans dosage auto, c’est le garde-fou : on voit la consommation des plants avant que les feuilles ne parlent."
   },
   {
+    id: "ezo-carrier",
+    cat: "Contrôle & capteurs",
+    name: "Support EZO isolé",
+    model: "Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2",
+    sku: "ISCCB-2",
+    qty: "2",
+    price: "32,99 $ USD",
+    currency: "USD",
+    supplier: "Atlas Scientific",
+    img: "images/atlas-ezo-carrier-isccb-2.jpg",
+    url: "https://atlas-scientific.com/carrier-boards/electrically-isolated-ezo-carrier-board-gen-2/",
+    desc: "Chaque circuit EZO va sur son propre Electrically Isolated EZO Carrier Board — il en faut donc 2 pour pH + EC. Isolation électrique intégrée pour UART/I²C, connecteur SMA pour la sonde; plus besoin de breadboard ni d’isolateur externe. Carte support uniquement : les circuits EZO ne sont pas inclus."
+  },
+  {
     id: "danby",
     cat: "Éclairage & air",
     name: "Déshumidificateur",
