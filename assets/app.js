@@ -64,22 +64,22 @@ const PRODUCTS = [
     img: "images/fusion-hut-4x4.jpg",
     url: "https://growlights.ca/products/4-x-4-x-6-5-fusion-hut-600d-mylar-grow-tent",
     backup: true,
-    desc: "Ancienne tente v1 : 47×47×79 po, mylar 600D. Restée en documentation comme solution de secours avec l’EZ Stor 8 gal et le plateau XTrays 2×4."
+    desc: "Ancienne tente v1 : 47×47×79 po, mylar 600D. Restée en documentation comme solution de secours avec l’EZ Stor 8 gal et le plateau XTrays 3×3."
   },
   {
     id: "bac",
     cat: "Backup — config v1",
     name: "Bac de rétention",
-    model: "XTrays Classic Flood Black 2×4",
-    sku: "141104",
+    model: "XTrays Classic Flood White 3×3",
+    sku: "141105",
     qty: "1",
-    price: "86,95 $ CAD",
+    price: "89,95 $ CAD",
     currency: "CAD",
     supplier: "HydroponiquePro",
-    img: "images/xtrays-classic-flood.jpg",
-    url: "https://hydroponiquepro.com/fr/products/xtrays-classic-flood-black",
+    img: "images/xtrays-classic-3x3-141105.jpg",
+    url: "https://hydroponiquepro.com/products/xtrays-classic-flood",
     backup: true,
-    desc: "Ancienne option v1 : plateau ABS noir 2×4 fabriqué au Canada. Il portait un seul EZ Stor ~30 L et retenait une fuite. Conservé ici en référence comme config de secours (EZ Stor 8 gal + XTrays 2×4)."
+    desc: "Plateau ABS blanc 3×3 fabriqué au Canada (int. 36×36×7,13 po; ext. 41×41). Option de rétention moins chère et plus compacte que le SPTY100 pour deux bus tubs côte à côte (pack 34×21,5; ~1 po de jeu/côté). Volume posé au sol ~66 L (≥1,5 DWC) et ça rentre dans la CLOUDLAB 844 (41 vs 47,24). Conservé en backup — la config principale reste SPTY100."
   },
   {
     id: "reservoir",
@@ -94,7 +94,7 @@ const PRODUCTS = [
     img: "images/ez-stor-8gal.jpg",
     url: "https://indoorfarmer.ca/products/ez-stor-trade-container-buckets-lids",
     backup: true,
-    desc: "Ancien réservoir v1 ~30 L, HDPE, à percer pour capteurs et air. Gardé en documentation pour la config single‑bac EZ Stor + XTrays 2×4."
+    desc: "Ancien réservoir v1 ~30 L, HDPE, à percer pour capteurs et air. Gardé en documentation pour la config single‑bac EZ Stor + XTrays 3×3."
   },
   {
     id: "led",
