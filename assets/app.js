@@ -2,7 +2,8 @@
 const CATEGORIES = [
   "Enceinte & réservoir",
   "Éclairage & air",
-  "Contrôle & capteurs",
+  "Humide — chimie",
+  "Sec — air & contrôle",
   "Nutriments",
   "Électricité & sécurité",
   "Backup — config v1",
@@ -211,7 +212,7 @@ const PRODUCTS = [
   },
   {
     id: "mac",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "Ordinateur superviseur",
     model: "MacBook Air 2012",
     sku: "MacBookAir5,2 / A1466",
@@ -222,11 +223,11 @@ const PRODUCTS = [
     img: "images/macbook-air-2012.jpg",
     url: null,
     owned: true,
-    desc: "Machine existante : Python, base de données, tableau de bord, boucles PID/MPC. Les sondes Atlas pH et EC arrivent en USB. L’ESP32 Feather V2 gère l’I/O (USB série possible) ; le Mac supervise. Boucle 100 % locale — aucun nuage, aucun abonnement capteur. Photo Wikimedia (Mid 2012)."
+    desc: "Machine existante : Python, base de données, tableau de bord, boucles PID/MPC. L’ESP32 Feather V2 gère l’I/O côté air & contrôle 0–10 V ; le Mac supervise. Le kit chimie Atlas/RobotShop reste local (aucune obligation nuage). Boucle 100 % locale. Photo Wikimedia (Mid 2012)."
   },
   {
     id: "feather-esp32-v2",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "ESP32 Feather V2",
     model: "Adafruit ESP32 Feather V2 with Headers (STEMMA QT)",
     sku: "5900 / PiShop 805-1",
@@ -236,11 +237,11 @@ const PRODUCTS = [
     supplier: "PiShop.ca",
     img: "images/esp32-feather-v2-headers-pishop.jpg",
     url: "https://www.pishop.ca/product/adafruit-esp32-feather-v2-with-headers-8mb-flash-2-mb-psram-stemma-qt/",
-    desc: "Contrôleur I/O unique du projet. Il lit SCD41, SHT45, DS18B20 et les fuites, et pilote le GP8413 pour le dimming LED et ventilateur EC (0–10 V). Version avec headers et STEMMA QT, USB‑C. Le MacBook Air 2012 supervise (logging, tableaux de bord, PID/MPC) mais l’ESP32 reste le bas niveau même si le portable dort."
+    desc: "Contrôleur I/O côté sec (air & contrôle). Il lit SCD41, SHT45 et les fuites, et pilote le GP8413 pour le dimming LED et ventilateur EC (0–10 V). Version avec headers et STEMMA QT, USB‑C. Le MacBook Air 2012 supervise (logging, tableaux de bord, PID/MPC) mais l’ESP32 reste le bas niveau même si le portable dort."
   },
   {
     id: "dac",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "DAC 0–10 V",
     model: "DFRobot Gravity GP8413",
     sku: "DFR1073",
@@ -254,7 +255,7 @@ const PRODUCTS = [
   },
   {
     id: "scd41",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "CO₂ / T / HR tente",
     model: "Adafruit SCD-41",
     sku: "Product 5190",
@@ -268,7 +269,7 @@ const PRODUCTS = [
   },
   {
     id: "sht45",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "T / HR de référence",
     model: "Adafruit SHT45",
     sku: "Product 5665",
@@ -282,7 +283,7 @@ const PRODUCTS = [
   },
   {
     id: "usb-a-to-c",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "Câble USB‑A → USB‑C (données)",
     model: "USB Type‑C to USB 3.0 A‑Male Cable — 5 ft",
     sku: "CS-PID-48",
@@ -294,65 +295,25 @@ const PRODUCTS = [
     url: "https://www.pishop.ca/product/usb-type-c-to-usb-3-0-a-male-cable-5ft/",
     desc: "5 pi ≈ 1,52 m (plus proche de 1,8 m en stock CA). Câble de données USB 3.0, pas un câble charge‑only."
   },
+  /* Humide — chimie (kit unique qui remplace pH/EC USB + carriers + DS18B20) */
   {
-    id: "ds18",
-    cat: "Contrôle & capteurs",
-    name: "Température de solution",
-    model: "Waterproof DS18B20 + résistor",
-    sku: "119",
+    id: "atlas-wifi-hk",
+    cat: "Humide — chimie",
+    name: "Kit Hydroponique Wi‑Fi avec Capteur de Conductivité",
+    model: "Atlas Scientific Wi‑Fi Hydroponics Kit (pH/EC/RTD)",
+    sku: "RB-Atl-52 (mfr Wi‑Fi‑HK)",
     qty: "1",
-    price: "9,95 $ CAD",
+    price: "789,99 $ CAD",
     currency: "CAD",
-    supplier: "PiShop Canada",
-    img: "images/ds18b20-pishop.jpg",
-    url: "https://www.pishop.ca/product/waterproof-ds18b20-digital-temperature-sensor-extras/",
-    desc: "Sonde étanche 1-Wire, à immerger dans le DWC. La température de solution pilote oxygène dissous et confort racinaire — plus critique que l’air pour la laitue. Câble ~91 cm + résistance 4,7 kΩ inclus ; prêt à câbler sur l’ESP32 / Feather."
-  },
-  {
-    id: "ph",
-    cat: "Contrôle & capteurs",
-    name: "pH continu",
-    model: "Atlas Scientific EZO Complete-pH Kit",
-    sku: "KIT-106P",
-    qty: "1",
-    price: "194,99 $ USD",
-    currency: "USD",
-    supplier: "Atlas Scientific",
-    img: "images/atlas-ezo-ph.jpg",
-    url: "https://atlas-scientific.com/kits/ezo-complete-ph-kit/",
-    desc: "Kit USB complet : circuit EZO, sonde, calibration. Branché au Mac, pas à un nuage. Le pH de la solution laitue reste la consigne manuelle v1 — pas de pompe doseuse. On mesure en continu pour voir la dérive, pas pour fermer une boucle d’acide encore."
-  },
-  {
-    id: "ec",
-    cat: "Contrôle & capteurs",
-    name: "EC continu",
-    model: "Atlas Scientific EZO Complete-Conductivity Kit K=1.0",
-    sku: "KIT-105E",
-    qty: "1",
-    price: "259,99 $ USD",
-    currency: "USD",
-    supplier: "Atlas Scientific",
-    img: "images/atlas-ezo-ec.jpg",
-    url: "https://atlas-scientific.com/kits/ezo-complete-ec-kit/",
-    desc: "Conductivité K=1.0, USB vers le Mac, même philosophie que le pH. Suit la force nutritive Remo A+B dans ~30 L. Sans dosage auto, c’est le garde-fou : on voit la consommation des plants avant que les feuilles ne parlent."
-  },
-  {
-    id: "ezo-carrier",
-    cat: "Contrôle & capteurs",
-    name: "Support EZO isolé",
-    model: "Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2",
-    sku: "ISCCB-2",
-    qty: "2",
-    price: "32,99 $ USD",
-    currency: "USD",
-    supplier: "Atlas Scientific",
-    img: "images/atlas-ezo-carrier-isccb-2.jpg",
-    url: "https://atlas-scientific.com/carrier-boards/electrically-isolated-ezo-carrier-board-gen-2/",
-    desc: "Chaque circuit EZO va sur son propre Electrically Isolated EZO Carrier Board — il en faut donc 2 pour pH + EC. Isolation électrique intégrée pour UART/I²C, connecteur SMA pour la sonde; plus besoin de breadboard ni d’isolateur externe. Câble 5‑pin inclus (avec entretoises + header). Carte support uniquement : les circuits EZO ne sont pas inclus."
+    supplier: "RobotShop Canada",
+    img: "images/atlas-wifi-hydroponics-kit.jpg",
+    url: "https://ca.robotshop.com/fr/products/kit-hydroponique-wi-fi-capteur-conductivite",
+    restock: true,
+    desc: "Kit d’acquisition chimie unique : pH, conductivité K=1.0 et température de solution (PT‑1000), compensation automatique et cartes EZO isolées dans un boîtier IP64 assemblé. HUZZAH32 inclus pour la passerelle Wi‑Fi ; firmware usine vers ThingSpeak disponible mais on reste en boucle locale (lecture/firmware locaux, aucun nuage imposé). Remplace les kits USB EZO, les carriers isolés et le DS18B20. Taxes et livraison en sus."
   },
   {
     id: "stemma-qt-400mm",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "Câble STEMMA QT / Qwiic",
     model: "Adafruit 5385 — 400 mm",
     sku: "DigiKey 1528-5385-ND / 5385",
@@ -366,7 +327,7 @@ const PRODUCTS = [
   },
   {
     id: "dupont-ff-40",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "Dupont F‑F — ruban 40×",
     model: "Jumper femelle‑femelle 20 cm",
     sku: "285",
@@ -408,7 +369,7 @@ const PRODUCTS = [
   },
   {
     id: "usb-c-psu",
-    cat: "Électricité & sécurité",
+    cat: "Sec — air & contrôle",
     name: "Alimentation USB‑C 5.1 V / 3 A",
     model: "USB‑C Power Supply 5.1V 3.0A UL Listed (noir)",
     sku: "1203",
@@ -418,11 +379,11 @@ const PRODUCTS = [
     supplier: "PiShop.ca",
     img: "images/usb-c-5v3a-psu-pishop.jpg",
     url: "https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/",
-    desc: "Bloc secteur USB‑C pour ESP32, cordon ~1,5 m. Catégorie sécurité/électricité."
+    desc: "Bloc secteur USB‑C pour l’ESP32 Feather V2, cordon ~1,5 m."
   },
   {
     id: "boitier-1591xxtsbk",
-    cat: "Électricité & sécurité",
+    cat: "Sec — air & contrôle",
     name: "Boîtier ABS IP54",
     model: "Hammond 1591XXTSBK",
     sku: "HM3995-ND",
@@ -432,7 +393,7 @@ const PRODUCTS = [
     supplier: "DigiKey Canada",
     img: "images/hammond-1591xxtsbk.jpg",
     url: "https://www.digikey.ca/en/products/detail/hammond-manufacturing/1591XXTSBK/1206951",
-    desc: "~123×83×60 mm, ABS noir, IP54. Pas ventilée d’usine — percer si besoin pour ESP32 + carriers."
+    desc: "~123×83×60 mm, ABS noir, IP54. Boîte pour l’ESP32 Feather V2 et ses liaisons (SCD41/SHT45/GP8413)."
   },
   {
     id: "cable-22awg-3c",
@@ -465,7 +426,7 @@ const PRODUCTS = [
   },
   {
     id: "fuite",
-    cat: "Contrôle & capteurs",
+    cat: "Sec — air & contrôle",
     name: "Détecteurs de fuite",
     model: "DFRobot Water Leak Detector",
     sku: "SEN0454",
