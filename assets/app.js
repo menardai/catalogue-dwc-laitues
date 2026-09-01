@@ -323,20 +323,6 @@ const PRODUCTS = [
     desc: "Kit USB complet : circuit EZO, sonde, calibration. Branché au Mac, pas à un nuage. Le pH de la solution laitue reste la consigne manuelle v1 — pas de pompe doseuse. On mesure en continu pour voir la dérive, pas pour fermer une boucle d’acide encore."
   },
   {
-    id: "ph",
-    cat: "Contrôle & capteurs",
-    name: "pH continu",
-    model: "Atlas Scientific EZO Complete-pH Kit",
-    sku: "KIT-106P",
-    qty: "1",
-    price: "194,99 $ USD",
-    currency: "USD",
-    supplier: "Atlas Scientific",
-    img: "images/atlas-ezo-ph.jpg",
-    url: "https://atlas-scientific.com/kits/ezo-complete-ph-kit/",
-    desc: "Kit USB complet : circuit EZO, sonde, calibration. Branché au Mac, pas à un nuage. Le pH de la solution laitue reste la consigne manuelle v1 — pas de pompe doseuse. On mesure en continu pour voir la dérive, pas pour fermer une boucle d’acide encore."
-  },
-  {
     id: "ec",
     cat: "Contrôle & capteurs",
     name: "EC continu",
