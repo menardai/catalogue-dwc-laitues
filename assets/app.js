@@ -101,15 +101,15 @@ const PRODUCTS = [
     id: "led",
     cat: "Éclairage & air",
     name: "Éclairage",
-    model: "Fusion X-Spider 320 W 2FT",
-    sku: "FSX-320-2FT",
+    model: "Spider Farmer SF2000 (2026, Bridgelux 3030)",
+    sku: "SF2000",
     qty: "1",
-    price: "289,99 $ CAD",
+    price: "189,99 $ CAD",
     currency: "CAD",
-    supplier: "GrowLights Canada",
-    img: "images/fusion-x-spider-320.jpg",
-    url: "https://growlights.ca/products/fusion-x-spider-320w-2ft-led-grow-light",
-    desc: "Barre LED à entrée 0–10 V, largement trop puissante pour des laitues — c’est voulu. On la tient fortement dimmée via le GP8413 pour limiter la chaleur dans une tente sans climatiseur. Spectre et uniformité d’un 2 pi, pas d’un 4×4 fleuri."
+    supplier: "Spider Farmer Canada",
+    img: "images/spiderfarmer-sf2000.jpg",
+    url: "https://spiderfarmer.ca/products/sf2000-200w-full-spectrum-led-grow-light-with-dimmer-knob/",
+    desc: "LED 200 W dimmable (bouton + 0–10 V via GP8413). Trop pour laitues à 100 % — on dimme pour la chaleur sans climatiseur. Couverture constructeur 2×4 ; tente 4×4 donc on ne vise pas un flood plein 4×4. Bridgelux 3030, 2026."
   },
   {
     id: "fan",
@@ -251,7 +251,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/gp8413-dfr1073.jpg",
     url: "https://www.dfrobot.com/product-2756.html",
-    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Fusion X-Spider, l’autre le ventilateur EC SigilVentus. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
+    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Spider Farmer SF2000, l’autre le ventilateur EC SigilVentus. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
   },
   {
     id: "scd41",
