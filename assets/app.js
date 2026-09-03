@@ -185,16 +185,16 @@ const PRODUCTS = [
   {
     id: "clapets",
     cat: "Éclairage & air",
-    name: "Clapets anti-retour 1/4 po",
-    model: "1/4″ Plastic Check Valve",
-    sku: "SKU18772",
-    qty: "2",
-    price: "8–12 $ CAD",
+    name: "Clapets anti-retour 3/16 po",
+    model: "Pawfly PF-Ap — 6 PCS",
+    sku: "ASIN B01N92AXHF",
+    qty: "1 paquet (6)",
+    price: "7,99 $ CAD",
     currency: "CAD",
-    supplier: "Reef Supplies Canada",
-    img: "images/check-valve-14.jpg",
-    url: "https://www.reefsupplies.ca/products/1-4-plastic-check-valve",
-    desc: "Clapet plastique 1/4 po, un par ligne de pierre. Empêche la solution de siphonner vers la pompe à air en cas de coupure. Indoor Farmer et HydroponiquePro n’en cataloguent pas en 1/4 po ; Reef Supplies (Canada) est le substitut retenu."
+    supplier: "Amazon.ca / Pawfly",
+    img: "images/pawfly-pf-ap.jpg",
+    url: "https://www.amazon.ca/dp/B01N92AXHF",
+    desc: "6 clapets anti‑retour rouges pour tuyau standard 3/16 po ; deux utilisés, quatre de rechange. Empêchent le retour d’eau vers la pompe à air lors d’un arrêt/coupure. Prévu pour l’air/oxygène ; pas pour CO₂ ni autres systèmes haute pression."
   },
   {
     id: "pots",
