@@ -353,6 +353,20 @@ const PRODUCTS = [
     desc: "22 pintes, drainage continu, redémarrage auto après panne. Reste dans la chambre, hors tente : il traite l’air que l’extraction y déverse. Pas un climatiseur — il sèche, il ne refroidit pas. Branchement via la prise Shelly si on veut le couper la nuit."
   },
   {
+    id: "humidifier",
+    cat: "Éclairage & air",
+    name: "Humidificateur",
+    model: "Honeywell HUL525WC Mini Mist Ultrasonic Cool Humidifier (blanc)",
+    sku: "ASIN B097CLGZNL / HUL525WC",
+    qty: "1",
+    price: "54,98 $ CAD",
+    currency: "CAD",
+    supplier: "Amazon.ca",
+    img: "images/honeywell-hul525wc.jpg",
+    url: "https://www.amazon.ca/dp/B097CLGZNL",
+    desc: "Brume froide ultrasonique, 0,5 gal (~1,9 L), jusqu’à ~24 h, sans filtre, ultra silencieux, arrêt automatique, bac huiles essentielles. Pour la chambre/condo autour de la tente (pas un déshumid.). Branchement via Shelly possible."
+  },
+  {
     id: "shelly",
     cat: "Électricité & sécurité",
     name: "Prise contrôlable",
@@ -364,7 +378,7 @@ const PRODUCTS = [
     supplier: "Shelly USA",
     img: "images/shelly-plug-us-gen4.jpg",
     url: "https://us.shelly.com/products/shelly-plug-us-gen4-black?variant=51150414020949",
-    desc: "Prise 1800 W, Gen4, pour couper un appareil de chambre (Danby, pompe à air de secours) sans cloud obligatoire — API locale. Ce n’est pas le dimming 0–10 V : c’est le tout-ou-rien sécurisé. Un seul SKU noir, format US."
+    desc: "Prise 1800 W, Gen4, pour couper un appareil de chambre (humidificateur, pompe à air de secours) sans cloud obligatoire — API locale. Ce n’est pas le dimming 0–10 V : c’est le tout‑ou‑rien sécurisé. Un seul SKU noir, format US."
   },
   {
     id: "usb-c-psu",
