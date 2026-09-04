@@ -339,20 +339,6 @@ const PRODUCTS = [
     desc: "40 conducteurs femelle‑femelle, 20 cm. Pour prototyper câblage ESP32."
   },
   {
-    id: "danby",
-    cat: "Éclairage & air",
-    name: "Déshumidificateur",
-    model: "Danby DDR020BJ2WDB",
-    sku: "DDR020BJ2WDB",
-    qty: "1",
-    price: "269,99 $ CAD",
-    currency: "CAD",
-    supplier: "Danby Canada",
-    img: "images/danby-ddr020bj2wdb.jpg",
-    url: "https://www.danby.com/fr/products/deshumidificateurs/ddr020bj2wdb/",
-    desc: "22 pintes, drainage continu, redémarrage auto après panne. Reste dans la chambre, hors tente : il traite l’air que l’extraction y déverse. Pas un climatiseur — il sèche, il ne refroidit pas. Branchement via la prise Shelly si on veut le couper la nuit."
-  },
-  {
     id: "humidifier",
     cat: "Éclairage & air",
     name: "Humidificateur",
