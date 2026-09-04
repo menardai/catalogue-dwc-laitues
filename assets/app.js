@@ -115,16 +115,15 @@ const PRODUCTS = [
     id: "fan",
     cat: "Éclairage & air",
     name: "Ventilateur d’extraction EC",
-    model: "SigilVentus PROLINE 4″",
-    sku: "SE-A100-T01",
+    model: "ORTECH ODDMF-4-160 — 4″ Inline ECM Mixed Flow",
+    sku: "ODDMF-4-160",
     qty: "1",
-    price: "139 $ USD",
-    currency: "USD",
-    supplier: "SigilVentus",
-    img: "images/sigilventus-proline-4.jpg",
-    url: "https://sigilventus.com/products/4-inch-ec-inline-fan-hydroponics",
-    restock: true,
-    desc: "160 CFM pour 18 W, moteur EC avec PWM, 0–10 V et tachymètre. C’est la seule stratégie fraîcheur avec le dimming LED : extraire la chaleur de la tente vers la chambre. En réapprovisionnement chez le fabricant ; commander dès le retour."
+    price: "161,50 $ CAD",
+    currency: "CAD",
+    supplier: "Covalin Electrical Supply",
+    img: "images/ortech-oddmf-4-160.jpg",
+    url: "https://covalin.ca/collections/inline-fans/products/4-inline-ecm-mixed-flow-fan-160-cfm-max",
+    desc: "160 CFM max, moteur EC brushless, corps aluminium, double impeller. Extraction 4″ pour évacuer la chaleur, en tandem avec la SF2000 dimmée. Modèle ECM mix‑flow — pas d’entrée 0–10 V documentée."
   },
   {
     id: "gaine",
@@ -251,7 +250,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/gp8413-dfr1073.jpg",
     url: "https://www.dfrobot.com/product-2756.html",
-    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Spider Farmer SF2000, l’autre le ventilateur EC SigilVentus. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
+    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Spider Farmer SF2000; l’autre reste en réserve (tachymètre/PWM ou VFD à définir) si le ventilateur n’expose pas de 0–10 V direct. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
   },
   {
     id: "scd41",
