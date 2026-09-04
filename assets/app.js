@@ -42,15 +42,15 @@ const PRODUCTS = [
     id: "fg335192brn",
     cat: "Enceinte & réservoir",
     name: "Réservoirs DWC",
-    model: "Rubbermaid Commercial FG335192BRN (brun)",
-    sku: "CF691 (Linen Plus) · Mfr FG335192BRN",
+    model: "Rubbermaid Commercial FG335100GRAY (gris)",
+    sku: "FG335100GRAY (Amazon) · empreinte FG335192BRN",
     qty: "2",
-    price: "38,50 $ CAD / unité",
+    price: "44,98 $ CAD / unité",
     currency: "CAD",
-    supplier: "Linen Plus",
-    img: "images/rubbermaid-fg335192brn.jpg",
-    url: "https://www.linenplus.ca/en/rubbermaid-undivided-bus-utility-box.html?variation=629054",
-    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Variante brun FG335192BRN, SKU fournisseur CF691. Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Linen Plus indique souvent un minimum de 4 unités."
+    supplier: "Amazon.ca",
+    img: "images/rubbermaid-fg335100gray.jpg",
+    url: "https://www.amazon.ca/dp/B000BC5EP8",
+    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Version grise Amazon FG335100GRAY — mêmes dimensions que le brun FG335192BRN (Linen Plus). Deux bacs ouverts dans le SPTY100, radeaux XPS DIY. ~5–6 laitues par bac (~10–12 total)."
   },
   {
     id: "backup-tente",
