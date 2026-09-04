@@ -42,15 +42,15 @@ const PRODUCTS = [
     id: "fg335192brn",
     cat: "Enceinte & réservoir",
     name: "Réservoirs DWC",
-    model: "Rubbermaid Commercial FG335192BRN (brun)",
-    sku: "CF691 (Linen Plus) · Mfr FG335192BRN",
+    model: "Rubbermaid Commercial FG335100GRAY (gris)",
+    sku: "FG335100GRAY (Amazon) · empreinte FG335192BRN",
     qty: "2",
-    price: "38,50 $ CAD / unité",
+    price: "44,98 $ CAD / unité",
     currency: "CAD",
-    supplier: "Linen Plus",
-    img: "images/rubbermaid-fg335192brn.jpg",
-    url: "https://www.linenplus.ca/en/rubbermaid-undivided-bus-utility-box.html?variation=629054",
-    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Variante brun FG335192BRN, SKU fournisseur CF691. Deux dans le SPTY100. Radeaux XPS DIY (pas de couvercle commercial). ~5–6 laitues chacun (~10–12 total). Linen Plus indique souvent un minimum de 4 unités."
+    supplier: "Amazon.ca",
+    img: "images/rubbermaid-fg335100gray.jpg",
+    url: "https://www.amazon.ca/dp/B000BC5EP8",
+    desc: "Bac bus undivided NSF HDPE 21,5×17,13×7 po (~28,9 L). Version grise Amazon FG335100GRAY — mêmes dimensions que le brun FG335192BRN (Linen Plus). Deux bacs ouverts dans le SPTY100, radeaux XPS DIY. ~5–6 laitues par bac (~10–12 total)."
   },
   {
     id: "backup-tente",
@@ -115,16 +115,15 @@ const PRODUCTS = [
     id: "fan",
     cat: "Éclairage & air",
     name: "Ventilateur d’extraction EC",
-    model: "SigilVentus PROLINE 4″",
-    sku: "SE-A100-T01",
+    model: "ORTECH ODDMF-4-160 — 4″ Inline ECM Mixed Flow",
+    sku: "ODDMF-4-160",
     qty: "1",
-    price: "139 $ USD",
-    currency: "USD",
-    supplier: "SigilVentus",
-    img: "images/sigilventus-proline-4.jpg",
-    url: "https://sigilventus.com/products/4-inch-ec-inline-fan-hydroponics",
-    restock: true,
-    desc: "160 CFM pour 18 W, moteur EC avec PWM, 0–10 V et tachymètre. C’est la seule stratégie fraîcheur avec le dimming LED : extraire la chaleur de la tente vers la chambre. En réapprovisionnement chez le fabricant ; commander dès le retour."
+    price: "161,50 $ CAD",
+    currency: "CAD",
+    supplier: "Covalin Electrical Supply",
+    img: "images/ortech-oddmf-4-160.jpg",
+    url: "https://covalin.ca/collections/inline-fans/products/4-inline-ecm-mixed-flow-fan-160-cfm-max",
+    desc: "160 CFM max, moteur EC brushless, corps aluminium, double impeller. Extraction 4″ pour évacuer la chaleur, en tandem avec la SF2000 dimmée. Modèle ECM mix‑flow — pas d’entrée 0–10 V documentée."
   },
   {
     id: "gaine",
@@ -251,7 +250,7 @@ const PRODUCTS = [
     supplier: "DFRobot",
     img: "images/gp8413-dfr1073.jpg",
     url: "https://www.dfrobot.com/product-2756.html",
-    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Spider Farmer SF2000, l’autre le ventilateur EC SigilVentus. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
+    desc: "Deux sorties 0–10 V, 15 bits, bus I²C. Une voie dimme le Spider Farmer SF2000; l’autre reste en réserve (tachymètre/PWM ou VFD à définir) si le ventilateur n’expose pas de 0–10 V direct. C’est le muscle analogique du projet : pas de PWM brut sur des drivers 0–10 V industriels."
   },
   {
     id: "scd41",
@@ -340,18 +339,18 @@ const PRODUCTS = [
     desc: "40 conducteurs femelle‑femelle, 20 cm. Pour prototyper câblage ESP32."
   },
   {
-    id: "danby",
+    id: "humidifier",
     cat: "Éclairage & air",
-    name: "Déshumidificateur",
-    model: "Danby DDR020BJ2WDB",
-    sku: "DDR020BJ2WDB",
+    name: "Humidificateur",
+    model: "Honeywell HUL525WC Mini Mist Ultrasonic Cool Humidifier (blanc)",
+    sku: "ASIN B097CLGZNL / HUL525WC",
     qty: "1",
-    price: "269,99 $ CAD",
+    price: "54,98 $ CAD",
     currency: "CAD",
-    supplier: "Danby Canada",
-    img: "images/danby-ddr020bj2wdb.jpg",
-    url: "https://www.danby.com/fr/products/deshumidificateurs/ddr020bj2wdb/",
-    desc: "22 pintes, drainage continu, redémarrage auto après panne. Reste dans la chambre, hors tente : il traite l’air que l’extraction y déverse. Pas un climatiseur — il sèche, il ne refroidit pas. Branchement via la prise Shelly si on veut le couper la nuit."
+    supplier: "Amazon.ca",
+    img: "images/honeywell-hul525wc.jpg",
+    url: "https://www.amazon.ca/dp/B097CLGZNL",
+    desc: "Brume froide ultrasonique, 0,5 gal (~1,9 L), jusqu’à ~24 h, sans filtre, ultra silencieux, arrêt automatique, bac huiles essentielles. Pour la chambre/condo autour de la tente (pas un déshumid.). Branchement via Shelly possible."
   },
   {
     id: "shelly",
@@ -365,7 +364,7 @@ const PRODUCTS = [
     supplier: "Shelly USA",
     img: "images/shelly-plug-us-gen4.jpg",
     url: "https://us.shelly.com/products/shelly-plug-us-gen4-black?variant=51150414020949",
-    desc: "Prise 1800 W, Gen4, pour couper un appareil de chambre (Danby, pompe à air de secours) sans cloud obligatoire — API locale. Ce n’est pas le dimming 0–10 V : c’est le tout-ou-rien sécurisé. Un seul SKU noir, format US."
+    desc: "Prise 1800 W, Gen4, pour couper un appareil de chambre (humidificateur, pompe à air de secours) sans cloud obligatoire — API locale. Ce n’est pas le dimming 0–10 V : c’est le tout‑ou‑rien sécurisé. Un seul SKU noir, format US."
   },
   {
     id: "usb-c-psu",
